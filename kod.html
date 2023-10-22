@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <!-- Deadline lab1 22 października -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="css1.css" />
+    <title>Języki programowania</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12 header">
+            <h1 id="title">Języki programowania</h1>
+            <h2 id="podtytul">Strona poświęcona językom programowania</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 menu">
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="col-8 content">
+            <h3>O języku</h3>
+            <p>Java to obiektowy język programowania, 
+                który został stworzony przez firmę Sun Microsystems 
+                (teraz należy do Oracle Corporation) i wprowadzony na rynek w 1995 roku. 
+                Jest jednym z najpopularniejszych języków programowania na świecie i jest 
+                szeroko wykorzystywany w różnych dziedzinach, takich jak rozwijanie oprogramowania 
+                na platformy desktopowe, mobilne, webowe, serwerowe oraz wbudowane systemy.</p>
+            <h3>Cechy kluczowe</h3>
+            <p>Platforma niezależna: Język Java jest znany z zasady "Write Once, Run Anywhere" (WORA), co oznacza, że ​​programy napisane w Javie mogą być uruchamiane na różnych platformach bez konieczności modyfikacji. To jest osiągane dzięki wykorzystaniu wirtualnej maszyny Javy (JVM), która tłumaczy kod źródłowy na kod pośredni (bytecode), który może być uruchamiany na różnych systemach operacyjnych.
+                Obiektowość: Java jest językiem opartym na paradygmacie programowania obiektowego. Wszystko w Javie jest obiektem, co ułatwia tworzenie modularnych i łatwych w utrzymaniu aplikacji.
+                Zarządzanie pamięcią: Java automatycznie zarządza pamięcią, co oznacza, że ​​programiści nie muszą ręcznie alokować i dealokować pamięci. To pomaga uniknąć problemów związanych z wyciekami pamięci i dostępem do nieprzydzielonych obszarów pamięci.
+                Biblioteka standardowa: Java zawiera bogatą bibliotekę standardową, która zawiera wiele gotowych komponentów i narzędzi do różnych zastosowań. To przyspiesza rozwijanie aplikacji i pozwala na wykorzystanie gotowych rozwiązań.
+                Bezpieczeństwo: Java ma wbudowane mechanizmy bezpieczeństwa, które pomagają w ochronie przed atakami typu buffer overflow i innymi zagrożeniami.
+                Wsparcie dla wielowątkowości: Język Java ma wbudowane wsparcie dla wielowątkowości, co umożliwia tworzenie równoległych i współbieżnych aplikacji.
+                Rozwinięta społeczność: Java ma ogromną społeczność programistyczną oraz dostęp do licznych źródeł informacji i narzędzi programistycznych.
+                Rozwinięte narzędzia deweloperskie: Dla Javy dostępne są zaawansowane środowiska programistyczne, takie jak Eclipse, IntelliJ IDEA i NetBeans, które ułatwiają pisanie, debugowanie i testowanie aplikacji.
+                Wsparcie dla nowoczesnych technologii: Java nieustannie ewoluuje, dodając wsparcie dla najnowszych technologii, takich jak mikrousługi, kontenery Docker, chmura obliczeniowa i wiele innych.</p>
+            <h3>Zastosowania</h3>
+            <p>Java jest szeroko stosowana w firmach i organizacjach na całym świecie i jest wykorzystywana w 
+                różnych dziedzinach, od tworzenia aplikacji mobilnych na platformie Android po rozwijanie dużych 
+                systemów korporacyjnych. Jej popularność i elastyczność sprawiają, że nadal jest jednym z ważniejszych 
+                języków programowania w dzisiejszym świecie informatyki.</p>
+        </div>
+        <div class="col-2 aside">
+            <a id="changeStyle" href="#">
+                <h2>Strona w innym stylu</h2>
+            </a>
+                <h2>Wkrótce</h2>
+                <h2>Wkrótce</h2>
+        </div>
+    </div>
+    <div class="col-12 footer">
+        <p>&copy; 2023 Języki Programowania 101. Wszelkie prawa zastrzeżone.</p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("changeStyle").addEventListener("click", function(event) {
+                event.preventDefault();
+                var stylesheet = document.getElementById("stylesheet");
+
+                if (stylesheet && stylesheet.href) {
+                    if (stylesheet.href.endsWith("css1.css")) {
+                        stylesheet.href = "css2.css";
+                    } else {
+                        stylesheet.href = "css1.css";
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
